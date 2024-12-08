@@ -1,7 +1,13 @@
+import { VStack } from '@chakra-ui/react'
 import React from 'react'
+import AppRoutes from './AppRoutes/AppRoutes'
 
-export const App = () => {
+const App = () => {
   return (
-    <div>App</div>
+    <VStack>
+      <AppRoutes/>
+    </VStack>
   )
 }
+
+export default App
