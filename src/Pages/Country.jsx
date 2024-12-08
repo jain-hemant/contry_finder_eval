@@ -17,20 +17,20 @@ const Country = () => {
   useEffect(()=>{fetchCountry()},[])
   return (
     // <Grid lg={[templateColumns="repeat(4,1fr)", gap="8"]}>
-    <VStack width={"100%"}>
-        <Box justifyContent={"space-around"}>
+    <VStack width={"96%"} mx={"auto"}>
+        <Flex justifyContent={"space-around"}>
             <Box>
-                <span>Sort by Population</span>
+                {/* <span>Sort by Population</span> */}
                 <select>                    
                     <option value="asc">Ascending</option>
                     <option value="desc">Descending</option>
                 </select>
             </Box>
             <Flex>
-                <Text>Filter By Region</Text>
+                {/* <Text>Filter By Region</Text> */}
                 <Input placeholder='Enter Region Name...'/>
             </Flex>
-        </Box>
+        </Flex>
         <Box>        
             <Grid templateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(4,1fr)"]} gap={[0,4,8]}>
                 {

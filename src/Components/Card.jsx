@@ -15,18 +15,18 @@ const Card = ({country}) => {
   }
   
   return (
-    <Box pb={"15px"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"} borderRadius={"5px"}> 
+    <Flex flexDirection={"column"} gap={"20px"} width={"100%"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"} borderRadius={"5px"}> 
         <Box>
             <Image src={flags.png} height={"60"}/>
         </Box>
-        <Box width={"86%"} mx={"auto"}>
+        <Box width={"86%"} mx={"auto"} lineHeight={"35px"}>
             <Heading>{name.common}</Heading>
             <Text>Population: {population}</Text>
             <Text>Region: {region}</Text>
             <Text>Capital: {capital}</Text>
         </Box>
-        <Button onClick={()=>handleMoreDetails(name.common)}>More details</Button>
-    </Box>
+        <Button width={"100%"} onClick={()=>handleMoreDetails(name.common)}>More details</Button>
+    </Flex>
   )
 }
 
